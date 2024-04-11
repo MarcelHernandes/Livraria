@@ -9,11 +9,12 @@ namespace Sistema_de_Vendas_de_livros1
     class Menu
     {
         ControlPessoa controlePessoa;
-
+        ControlLivro controleLivro;
         public int opcao;
         public Menu()
         {
             controlePessoa = new ControlPessoa();
+            controleLivro = new ControlLivro();
             opcao = 0;
         }//Fim do menu
 
@@ -44,7 +45,7 @@ namespace Sistema_de_Vendas_de_livros1
                         controlePessoa.Operacao();
                         break;
                     case 2:
-
+                        controleLivro.Operacao();
                         break;
                     case 3:
 
